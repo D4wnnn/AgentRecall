@@ -1,0 +1,75 @@
+{
+  "scope": "three-shot reappearance diagnostics with shot_1 as the oracle return event",
+  "num_cases": 4,
+  "per_case": [
+    {
+      "trace": "exp/11-eventstate-recall/analysis/rooftop_baseline/agent_trace.json",
+      "final_action": "RECALL",
+      "final_target_event_ids": [
+        "shot_1"
+      ],
+      "return_event_hit_at_1": 1.0,
+      "return_action_correct": 1.0,
+      "absence_does_not_invalidate_origin": 1.0,
+      "historical_chunk_observation_coverage": 0.875,
+      "raw_attempts": 9,
+      "strict_json_rate": 0.7777777777777778,
+      "structural_repair_count": 7,
+      "observer_elapsed_seconds": 118.27608552610036
+    },
+    {
+      "trace": "exp/11-eventstate-recall/analysis/library_baseline/agent_trace.json",
+      "final_action": "RECALL",
+      "final_target_event_ids": [
+        "shot_1"
+      ],
+      "return_event_hit_at_1": 1.0,
+      "return_action_correct": 1.0,
+      "absence_does_not_invalidate_origin": 1.0,
+      "historical_chunk_observation_coverage": 1.0,
+      "raw_attempts": 7,
+      "strict_json_rate": 1.0,
+      "structural_repair_count": 8,
+      "observer_elapsed_seconds": 55.32793542800937
+    },
+    {
+      "trace": "exp/11-eventstate-recall/analysis/traveler_baseline/agent_trace.json",
+      "final_action": "RECALL",
+      "final_target_event_ids": [
+        "shot_1"
+      ],
+      "return_event_hit_at_1": 1.0,
+      "return_action_correct": 1.0,
+      "absence_does_not_invalidate_origin": 1.0,
+      "historical_chunk_observation_coverage": 1.0,
+      "raw_attempts": 7,
+      "strict_json_rate": 1.0,
+      "structural_repair_count": 9,
+      "observer_elapsed_seconds": 50.6994429390179
+    },
+    {
+      "trace": "exp/11-eventstate-recall/analysis/clockmaker_baseline/agent_trace.json",
+      "final_action": "RECALL",
+      "final_target_event_ids": [
+        "shot_1"
+      ],
+      "return_event_hit_at_1": 1.0,
+      "return_action_correct": 1.0,
+      "absence_does_not_invalidate_origin": 1.0,
+      "historical_chunk_observation_coverage": 1.0,
+      "raw_attempts": 9,
+      "strict_json_rate": 1.0,
+      "structural_repair_count": 8,
+      "observer_elapsed_seconds": 103.51289640599862
+    }
+  ],
+  "mean": {
+    "return_event_hit_at_1": 1.0,
+    "return_action_correct": 1.0,
+    "absence_does_not_invalidate_origin": 1.0,
+    "historical_chunk_observation_coverage": 0.96875,
+    "strict_json_rate": 0.9444444444444444,
+    "structural_repair_count": 8.0,
+    "observer_elapsed_seconds": 81.95409007478156
+  }
+}

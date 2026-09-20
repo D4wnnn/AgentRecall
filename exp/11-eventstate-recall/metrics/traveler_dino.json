@@ -1,0 +1,50 @@
+{
+  "metric_scope": "global-frame DINOv2 screening; not object-crop or official MemoBench",
+  "model": "/private/lc/download/models/dinov2-large",
+  "results": [
+    {
+      "video": "exp/10-demo-long-transition/outputs/baseline/YX_rank0-1-0_regular.mp4",
+      "dino_global_return_cosine": 0.22343574464321136,
+      "dino_global_absent_cosine": 0.4139406085014343,
+      "dino_global_return_gap": -0.19050486385822296,
+      "dino_global_return_nn": 0.22444842755794525,
+      "dino_global_absent_nn": 0.29317161440849304,
+      "dino_global_adjacent_smoothness": 0.6520014405250549,
+      "decoded_frames": 765,
+      "label": "baseline"
+    },
+    {
+      "video": "exp/10-demo-long-transition/outputs/layerrecall/YX_rank0-1-0_regular.mp4",
+      "dino_global_return_cosine": 0.4211702346801758,
+      "dino_global_absent_cosine": 0.43829554319381714,
+      "dino_global_return_gap": -0.017125308513641357,
+      "dino_global_return_nn": 0.40405789017677307,
+      "dino_global_absent_nn": 0.39785847067832947,
+      "dino_global_adjacent_smoothness": 0.783623198668162,
+      "decoded_frames": 765,
+      "label": "layerrecall"
+    },
+    {
+      "video": "exp/10-demo-long-transition/outputs/agent_event/YX_rank0-1-0_regular.mp4",
+      "dino_global_return_cosine": 0.418096125125885,
+      "dino_global_absent_cosine": 0.43871569633483887,
+      "dino_global_return_gap": -0.020619571208953857,
+      "dino_global_return_nn": 0.37876519560813904,
+      "dino_global_absent_nn": 0.39558151364326477,
+      "dino_global_adjacent_smoothness": 0.7289503415425619,
+      "decoded_frames": 765,
+      "label": "oracle_agent_event"
+    },
+    {
+      "video": "exp/11-eventstate-recall/outputs/qwen_agent_gated/case_0002/YX_rank0-0-0_regular.mp4",
+      "dino_global_return_cosine": 0.30154311656951904,
+      "dino_global_absent_cosine": 0.3183388113975525,
+      "dino_global_return_gap": -0.016795694828033447,
+      "dino_global_return_nn": 0.26013413071632385,
+      "dino_global_absent_nn": 0.3672105371952057,
+      "dino_global_adjacent_smoothness": 0.6749855975310007,
+      "decoded_frames": 765,
+      "label": "eventstate_recall"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["event_id", "operation", "summary", "chunk_observations", "confidence"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "operation": {"enum": ["CREATE_EVENT", "EXTEND_EVENT", "UPDATE_STATE", "INVALIDATE_STATE", "LINK_REAPPEARANCE"]},
+    "summary": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "related_event_ids": {"type": "array", "items": {"type": "string"}},
+    "chunk_observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["chunk_id", "visible_entities", "scene", "state_delta"],
+        "properties": {
+          "chunk_id": {"type": "integer", "minimum": 0},
+          "visible_entities": {"type": "array", "items": {"type": "string"}},
+          "scene": {"type": "string"},
+          "state_delta": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "entity_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "attributes", "valid"],
+        "properties": {
+          "entity_id": {"type": "string"},
+          "attributes": {"type": "object"},
+          "valid": {"type": "boolean"},
+          "supersedes": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

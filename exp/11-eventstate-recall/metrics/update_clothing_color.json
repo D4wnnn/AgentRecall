@@ -1,0 +1,38 @@
+{
+  "scope": "central-crop RGB occupancy screen; not segmented clothing accuracy",
+  "results": [
+    {
+      "video": "exp/03-recall-update-conflict/outputs/local_only/YX_rank0-1-0_regular.mp4",
+      "shot_1_red_fraction": 0.3554647558793456,
+      "shot_1_blue_fraction": 0.13693443251533743,
+      "shot_1_blue_share": 0.2780963814375289,
+      "shot_3_red_fraction": 0.1152669936520109,
+      "shot_3_blue_fraction": 0.4061168626448534,
+      "shot_3_blue_share": 0.778921053538757,
+      "state_update_margin": 0.500824672101228,
+      "label": "baseline"
+    },
+    {
+      "video": "exp/03-recall-update-conflict/outputs/fixed10/YX_rank0-1-0_regular.mp4",
+      "shot_1_red_fraction": 0.3481648346966599,
+      "shot_1_blue_fraction": 0.14052381561008861,
+      "shot_1_blue_share": 0.28755285297066385,
+      "shot_3_red_fraction": 0.12170751320722563,
+      "shot_3_blue_fraction": 0.4100970038769598,
+      "shot_3_blue_share": 0.7711423854115945,
+      "state_update_margin": 0.48358953244093067,
+      "label": "layerrecall"
+    },
+    {
+      "video": "exp/11-eventstate-recall/outputs/qwen_agent_update/YX_rank0-0-0_regular.mp4",
+      "shot_1_red_fraction": 0.32507016338616224,
+      "shot_1_blue_fraction": 0.03140976482617587,
+      "shot_1_blue_share": 0.08811089304154754,
+      "shot_3_red_fraction": 0.2604153352931152,
+      "shot_3_blue_fraction": 0.22033899433367415,
+      "shot_3_blue_share": 0.45831931353530153,
+      "state_update_margin": 0.370208420493754,
+      "label": "eventstate_recall"
+    }
+  ]
+}
